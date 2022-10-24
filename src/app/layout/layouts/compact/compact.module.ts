@@ -14,11 +14,11 @@ import { SearchModule } from 'app/layout/common/search/search.module';
 import { ShortcutsModule } from 'app/layout/common/shortcuts/shortcuts.module';
 import { UserModule } from 'app/layout/common/user/user.module';
 import { SharedModule } from 'app/shared/shared.module';
-import { DenseLayoutComponent } from 'app/layout/layouts/vertical/dense/dense.component';
+import { CompactLayoutComponent } from 'app/layout/layouts/compact/compact.component';
 
 @NgModule({
     declarations: [
-        DenseLayoutComponent
+        CompactLayoutComponent
     ],
     imports     : [
         HttpClientModule,
@@ -38,9 +38,9 @@ import { DenseLayoutComponent } from 'app/layout/layouts/vertical/dense/dense.co
         SharedModule
     ],
     exports     : [
-        DenseLayoutComponent
+        CompactLayoutComponent
     ]
 })
-export class DenseLayoutModule
+export class CompactLayoutModule
 {
 }
